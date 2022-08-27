@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 98vh;
+            background-color: rgb(75, 75, 75);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        main {
+            text-align: center;
+            margin: 0;
+            width: 300px;
+            background-image: linear-gradient(to bottom, rgb(114, 99, 248), rgb(216, 25, 233));
+            padding: 50px;
+            border-radius: 50px;
+        }
+
+        label {
+            font-size: 12px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input {
+            width: 20px;
+            border-radius: 10px;
+            border: 0ch;
+            padding: 5px;
+            text-align: center;
+        }
+
+        button {
+            border-radius: 10px;
+            border: 0ch;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #resultado {
+            font-size: 20px;
+        }
+
+        #explicacao {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Bhaskara</h1>
+        <input type="number" id="valorA" placeholder="a">
+        <label>x² + </label>
+        <input type="number" id="valorB" placeholder="b">
+        <label>x + </label>
+        <input type="number" id="valorC" placeholder="c">
+        <label>= 0</label><br><br>
+        <button onclick="result()">Resultado</button><br>
+        <p id="resultado"></p>
+    </main>
+    <script src="./bhaskara.js"></script>
+</body>
+
+</html>
+
+<!-- Para isso, sua função deve receber três parâmetros, “a.x2”, “b.x” e “c”, de tal modo que na equação: 3x² - 5x + 12 os valores seriam respectivamente: 3, -5, 12. 
+
+Como retorno deve ser passado um vetor que tem 2 valores um para cada possível resultado, mesmo que os resultados sejam iguais.
+
+Caso o delta seja negativo, retorne, ao invés do vetor, um string com a frase: “Delta é negativo”. -->

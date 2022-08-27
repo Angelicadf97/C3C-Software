@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+    background-color: rgb(75, 75, 75);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    text-align: center;
+    margin: 0;
+    width: 400px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+button {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0ch;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.a{
+    background-image: linear-gradient(to bottom, rgb(206, 37, 164), rgb(233, 119, 25));
+}
+
+.b{
+    background-image: linear-gradient(to bottom, rgb(114, 99, 248), rgb(216, 25, 233));
+}
+
+.gradient {
+    background-image: linear-gradient(to bottom, rgb(206, 37, 164), rgb(233, 119, 25), rgb(114, 99, 248));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+button:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}

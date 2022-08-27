@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuidyMoura</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 98vh;
+            background-color: rgb(75, 75, 75);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        main{
+            text-align: center;
+            margin: 0;
+            width: 300px;
+            background-image: linear-gradient(to bottom, rgb(114, 99, 248), rgb(216, 25, 233));
+            padding: 50px;
+            border-radius: 50px;
+            word-wrap: break-word;
+        }
+        label{
+            font-size: 12px;
+        }
+        input{
+            border-radius: 10px;
+            border: 0ch;
+            padding: 10px;
+            text-align: center;
+        }
+        button{
+            border-radius: 10px;
+            border: 0ch;
+            padding: 10px;
+            text-align: center;
+        }
+        #resultado{
+            font-size: 20px;
+        }
+        #explicacao{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>LuidyMoura</h1>
+        <label for="num">Digite um número:</label><br>
+        <input type="number" id="num" min="1"><br><br>
+        <button onclick="result()">Começar</button><br>
+        <p id="lista"></p>
+    </main>
+    <script src="./luidyMoura.js"></script>
+</body>
+</html>
